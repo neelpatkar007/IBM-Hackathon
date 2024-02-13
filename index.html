@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScholarBite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>ScholarBite</h1>
+  </header>
+
+  <div class="chat-button">
+    <img src="callcentreimage.jpg" alt="Chat Icon">
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to ScholarBite!</h2>
+    <p>
+      Our community of volunteers is dedicated to providing healthy and affordable food options for university students.
+      We believe in the power of good nutrition and want to make it easier for students to access delicious meals.
+    </p>
+    <div class="cta-container">
+      <a href="#menu" class="cta-button">Check out our Menu</a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <p>
+      Our volunteers buy fresh groceries and prepare nutritious meals for university students at an affordable price.
+      Check out our menu below:
+    </p>
+    <ul>
+      <div style="display: flex;">
+        <div class="menu-item-veg" onmouseover="addHoverEffectveg(this)" onmouseout="removeHoverEffectveg(this)"
+          style="background-image: url(healthypasta.jpg); background-position: center;">
+          <li class="popup" onclick="myFunction()">
+            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+            <span class="popuptext" id="myPopup">
+              <h3>Healthy Pasta £2.99</h3>102 calories <br>This take on a classic Italian dish (Pasta alla Norma is
+              named for Bellini’s opera, Norma) pairs golden fried aubergine with a simple tomato sauce. Delicious at
+              any
+              time of year.<br><br>
+              <p
+                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: lightgreen;">
+                Wanna make it at
+                home? <a
+                  href="https://0bb8ecef-4be4-4f6e-9206-ad2332473126-00-1pbtww3ldbcpk.janeway.replit.dev/#contact"
+                  target="_blank">
+                  Click here</a></p>
+            </span>
+          </li>
+        </div>
+        <div class="menu-item-nonveg" onmouseover="addHoverEffectnonveg(this)"
+          onmouseout="removeHovestyrEffectnonveg(this)"
+          style="background-image: url(quinoasalad.jpg); background-position: center;">
+        </div>
+        <li class="menu-item-veg" onmouseover="addHoverEffectveg(this)" onmouseout="removeHoverEffectveg(this)"
+          style="background-image: url(vegstir.jpg); background-position: center;">
+        </li>
+        <li class="menu-item-nonveg" onmouseover="addHoverEffectnonveg(this)"
+          onmouseout="removeHovestyrEffectnonveg(this)"
+          style="background-image: url(salmon.jpg); background-position: center;"></li>
+        <li class="menu-item-veg" onmouseover="addHoverEffectveg(this)" onmouseout="removeHoverEffectveg(this)"
+          style="background-image: url(avocado.jpg); background-position: center;"></li>
+        <li class="menu-item-nonveg" onmouseover="addHoverEffectnonveg(this)"
+          onmouseout="removeHovestyrEffectnonveg(this)"
+          style="background-image: url(biryani.jpg); background-position: center;"></li>
+    </ul>
+  </section>
+  </div>
+
+  <section id="contact">
+    <centre>
+      <h2>Contact Us</h2>
+      <p>
+        Interested in volunteering or want to place an order? Contact us below:
+      </p>
+    </centre>
+    <form id="contact-form" onsubmit="submitForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <div class="col">
+    <a href="#" class="btn fb">
+      <i class="fa fa-facebook fa-fw"></i> Reach us on Facebook
+    </a><br>
+
+    <!-- Twitter button -->
+    <a href="#" class="btn twitter">
+      <i class="fa fa-twitter fa-fw"></i> Reach us on Twitter
+    </a><br>
+
+    <!-- Google button -->
+    <a href="#" class="btn google">
+      <i class="fa fa-google fa-fw"></i> Reach us on Instagram
+    </a><br>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <p style="margin-left: 45%;">&copy; 2024 ScholarBite</p>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
